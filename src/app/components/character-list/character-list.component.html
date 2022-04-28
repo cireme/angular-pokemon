@@ -1,0 +1,21 @@
+<a routerLink="/">Retour</a>
+
+
+<div id="title" *ngIf="title != null">
+  {{title}}
+</div>
+
+
+<div class="character" *ngFor="let character of names">
+  <span class="character-name">Name : </span>{{character}}
+</div>
+
+<div class="pokemon" *ngFor="let character of characters">
+  <span class="pokemon-name">Pokemon Name : </span>{{character.name}}
+  <!-- <img [src]="character.img"> -->
+</div>
+
+<div class="character-name">TEST de name</div>
+
+
+<button (click)="defineTitle()">afficher titre</button>

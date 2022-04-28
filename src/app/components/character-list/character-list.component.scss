@@ -1,0 +1,25 @@
+.character {
+  border: 1px solid;
+  background-color: deeppink;
+  margin-bottom: 10px;
+
+  .character-name {
+    font-weight: bold;
+  }
+}
+
+.pokemon {
+   border: 1px solid;
+   background-color: lightsteelblue;
+   margin-bottom: 10px;
+
+   .pokemon-name {
+     font-weight: bold;
+   }
+ }
+
+#title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
