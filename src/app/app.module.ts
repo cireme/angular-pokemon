@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { CharacterListComponent } from './components/character-list/character-list.component';
 import {HttpClientModule} from '@angular/common/http';
+import { CharacterCreationComponent } from './components/character-creation/character-creation.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CharacterListComponent
+    CharacterListComponent,
+    CharacterCreationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

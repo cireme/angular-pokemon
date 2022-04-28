@@ -12,4 +12,8 @@ export class CharactersService {
   findAll(): Observable<any> {
     return this.httpClient.get<any>('https://pokeapi.co/api/v2/pokemon');
   }
+
+  create(data: any) {
+    return this.httpClient.post('url', data);
+  }
 }

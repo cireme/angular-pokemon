@@ -1,0 +1,24 @@
+<a routerLink="/characters">Retour</a>
+
+<h1>Création d'un caractère</h1>
+
+<form [formGroup]="creationForm" (submit)="creation()">
+  <div>
+    <label>Nom</label>
+    <input formControlName="name">
+  </div>
+  <div>
+    <label>Email</label>
+    <input formControlName="email">
+  </div>
+  <div>
+    <label>Âge</label>
+    <input formControlName="age">
+  </div>
+
+  <div *ngIf="error != ''">
+    {{error}}
+  </div>
+
+  <button type="submit">Créer</button>
+</form>
